@@ -309,10 +309,19 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{display:none;width:0;height:0}
  .attendance-team tfoot .summary-label,.attendance-team.summary-table .summary-label{width:362px;min-width:362px;max-width:362px}
 }
 @media(max-width:600px){
- .attendance-team .exclude-col,.attendance-team thead .exclude-col{left:175px;width:20px;min-width:20px;max-width:20px;padding:1px!important}
- .attendance-team .role-col{left:195px;width:100px;min-width:100px;max-width:100px}
- .attendance-team .exclude-col .month-exclude{width:17px;height:18px;font-size:14px;border-radius:5px}
- .attendance-team tfoot .summary-label,.attendance-team.summary-table .summary-label{width:295px;min-width:295px;max-width:295px;padding-left:9px}
+ .attendance-team .exclude-col,.attendance-team thead .exclude-col{left:175px;width:28px;min-width:28px;max-width:28px}
+ .attendance-team .role-col{left:203px;width:100px;min-width:100px;max-width:100px}
+ .attendance-team .exclude-col .month-exclude{width:22px;height:22px;font-size:16px}
+ .attendance-team tfoot .summary-label,.attendance-team.summary-table .summary-label{width:303px;min-width:303px;max-width:303px;padding-left:9px}
 }
 
 .vacation-head-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.vacation-analytics{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}.vacation-analytics-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.vacation-analytics-head h3{margin:0;color:var(--ink);font-size:15px}.vacation-analytics-head p{margin:5px 0 0}.vacation-total-count{white-space:nowrap;border-radius:999px;background:#e9f5ef;color:#12845f;padding:6px 10px;font-size:12px;font-weight:800}.vacation-chart-switch{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0 10px}.vacation-chart-switch .filter-btn{cursor:pointer}.vacation-chart-title{margin-bottom:8px;color:#435149;font-size:12px;font-weight:700}.vacation-chart-bars{display:grid;gap:8px}.vacation-chart-row{display:grid;grid-template-columns:minmax(95px,1fr) minmax(80px,2fr) 28px;align-items:center;gap:9px;font-size:12px}.vacation-chart-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#34423a}.vacation-chart-track{height:11px;border-radius:7px;background:#edf1ee;overflow:hidden}.vacation-chart-track i{display:block;height:100%;border-radius:7px;background:#12845f}.vacation-chart-row>b{text-align:right;color:#26342d}.vacation-head-actions .btn{white-space:nowrap}@media(max-width:600px){.vacation-head-actions{width:100%}.vacation-head-actions .btn{font-size:11px;padding:8px 9px}.vacation-chart-row{grid-template-columns:minmax(78px,1fr) minmax(50px,1.4fr) 24px;gap:6px}}
+/* Correção definitiva mobile: nome, X e função ficam encostados; colunas fixas sem sobra. */
+@media (max-width:600px){
+ .attendance-team{width:max-content!important;min-width:0!important;table-layout:fixed!important}
+ .attendance-team .person-col,.attendance-team th.person-col,.attendance-team td.person-col{width:150px!important;min-width:150px!important;max-width:150px!important}
+ .attendance-team .exclude-col,.attendance-team th.exclude-col,.attendance-team td.exclude-col{left:150px!important;width:24px!important;min-width:24px!important;max-width:24px!important;padding:0!important}
+ .attendance-team .role-col,.attendance-team th.role-col,.attendance-team td.role-col{left:174px!important;width:100px!important;min-width:100px!important;max-width:100px!important}
+ .attendance-team .exclude-col .month-exclude{width:20px!important;min-width:20px!important;height:22px!important;margin:0!important;padding:0!important}
+ .attendance-team tfoot .summary-label,.attendance-team.summary-table .summary-label{width:274px!important;min-width:274px!important;max-width:274px!important}
+}
